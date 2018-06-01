@@ -1,22 +1,23 @@
+#My simple test for isoSeq3#
 ----------------------------------
 # step1 - CCS
 
 ## ccs sub-soft from smrt link v5.1.0
         ccs \
-         --force \
-         --minSnr 4 \
-         --minLength 200 
-          --minPasses 1 \
-          --minPredictedAccuracy 0.8 \
-         --minZScore -999 \
-	        --maxDropFraction 0.8 \
-        	--numThreads 20 \
-        	--reportFile ccs_report.txt \ #output a CCS summary file
-        	--logLevel DEBUG \
-	        --logFile ccs_log.txt \  #output a CCS process log file
-        	--noPolish \
-        	test.subreads.bam \      #input a original subreads.bam of sequel
-	        ccs.bam                  #output CCS sequence file of BAM format
+        --force \
+        --minSnr 4 \
+        --minLength 200 
+        --minPasses 1 \
+        --minPredictedAccuracy 0.8 \
+        --minZScore -999 \
+	--maxDropFraction 0.8 \
+        --numThreads 20 \
+        --reportFile ccs_report.txt \ #output a CCS summary file
+        --logLevel DEBUG \
+	--logFile ccs_log.txt \       #output a CCS process log file
+        --noPolish \
+        test.subreads.bam \           #input a original subreads.bam of sequel
+	ccs.bam                       #output CCS sequence file of BAM format
   
 ### output files
 ccs.bam
