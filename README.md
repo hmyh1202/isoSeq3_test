@@ -1,4 +1,4 @@
-#My simple test for isoSeq3#
+#My simple test for isoSeq3
 ----------------------------------
 # step1 - CCS
 
